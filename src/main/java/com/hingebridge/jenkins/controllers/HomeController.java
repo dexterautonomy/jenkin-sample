@@ -13,4 +13,11 @@ public class HomeController
 	{
 		return "pages/home";
 	}
+	
+	@RequestMapping("next")
+	public String next(ModelMap model)
+	{
+		model.addAttribute("data", "Welcome to next page!");
+		return "pages/register";
+	}
 }
